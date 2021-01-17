@@ -20,11 +20,5 @@
   position: absolute;
 }
 .nav__dot {
-  background-color: #ff6229;
-  height: 6px;
-  width: 6px;
-  border-radius: 50%;
   position: absolute;
-  top: -15px;
-  left: 32px;
 }
