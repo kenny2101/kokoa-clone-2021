@@ -1,3 +1,7 @@
+.dot__link {
+  color: #2f363e;
+  position: relative;
+}
 .dot {
   background-color: #ff6229;
   height: 6px;
@@ -5,4 +9,5 @@
   border-radius: 50%;
   top: -15px;
   left: 32px;
+  position: absolute;
 }
