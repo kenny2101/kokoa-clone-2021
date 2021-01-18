@@ -31,17 +31,35 @@
     visibility: hidden;
   }
 }
-
+.friends-dsp {
+  position: relative;
+}
 #splash-screen {
   background-color: var(--yellow);
   position: absolute;
-  width: 100vh;
-  height: 100vh;
-  top: 0;
+  width: 482px;
+  height: 982px;
+  top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 132px;
   animation: hideSplashScreen 0.3s ease-in-out forwards;
   animation-delay: 2s;
+  border-radius: 40px;
+}
+
+@keyframes friendsBtnMove {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: none;
+  }
+}
+.friends__btn i {
+  animation: friendsBtnMove 2s ease-in-out infinite;
 }

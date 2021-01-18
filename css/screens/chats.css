@@ -1,0 +1,14 @@
+@keyframes navBtnMove {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: none;
+  }
+}
+.chats__btn i {
+  animation: navBtnMove 2s ease-in-out infinite;
+}

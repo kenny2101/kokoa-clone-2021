@@ -8,81 +8,119 @@
   </head>
 
   <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span>No Service</span>
-        <i class="fas fa-wifi"></i>
-      </div>
-      <div class="status-bar__column">
-        <span>18:43</span>
-      </div>
-      <div class="status-bar__column">
-        <span>100%</span>
-        <i class="fas fa-battery-full fa-2x"></i>
-        <i class="fas fa-bolt"></i>
+    <div class="smartphone">
+      <div class="dsp">
+        <div class="status-bar">
+          <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+          </div>
+          <div class="status-bar__column">
+            <span>18:43</span>
+          </div>
+          <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fas fa-battery-full fa-2x"></i>
+            <i class="fas fa-bolt"></i>
+          </div>
+        </div>
+     
+        <header class="screen-header">
+          <h1 class="screen-header__title">Chats</h1>
+          <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span><i class="far fa-comment-dots fa-lg"></i></span>
+            <span><i class="fas fa-music fa-lg"></i></span>
+            <span><a href="settings.html"><i class="find-screen-header-cog fas fa-cog fa-lg">
+              <div class="find-screen-header-dot dot"></div>
+          </i></a></span>
+          </div>
+        </header>
+     
+        <main class="main-screen">
+          <a href="chat.html">
+            <div class="user-component">
+              <div class="user-component__column">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq4IgGQ-ytBslXNf6ymCd-qFN886_ZAtf0dg&usqp=CAU" class="user-component__avatar user-component__avatar"/>
+                <div class="user-component__text">
+                  <h4 class="user-component__title">배수지</h4>
+                  <h6 class="user-component__subtitle">아이유 움짤 확인하세요!</h6>
+                </div>
+              </div>
+              <div class="user-component__column">
+                <span class="user-component__time">1분전</span>
+                <div class="badge">1</div>
+              </div>      
+            </div>
+          </a>
+          <div class="user-component">
+            <div class="user-component__column">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8f8hfCwAXgqm19EE3VSodozfAhOS9TUZpbw&usqp=CAU" class="user-component__avatar user-component__avatar--xl"/>
+              <div class="user-component__text">
+                <h4 class="user-component__title">강슬기</h4>
+                <h6 class="user-component__subtitle">곰슬기는 휴먼히읗체</h6>
+              </div>
+            </div>
+            <div class="user-component__column">13:30</div>      
+      
+          </div>
+          <div class="user-component">
+            <div class="user-component__column">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvwCTI7VflyUOALJrZPB8HRqFisMcZGCPPTw&usqp=CAU" class="user-component__avatar user-component__avatar--xl"/>
+              <div class="user-component__text">
+                <h4 class="user-component__title">아이유</h4>
+                <h6 class="user-component__subtitle">어떤 단어로 널 설명할 수 있을까?</h6>
+              </div>
+            </div>
+            <div class="user-component__column">01:52</div>      
+      
+          </div>
+          
+          <div class="user-component">
+            <div class="user-component__column">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV2V5KFuVBOhmza9QbTUtV4_qPu2B3hcztag&usqp=CAU" class="user-component__avatar user-component__avatar--xl"/>
+              <div class="user-component__text">
+                <h4 class="user-component__title">전지현</h4>
+                <h6 class="user-component__subtitle">도매니저!! 도매니저!!!</h6>
+              </div>
+            </div>
+            <div class="user-component__column">2일전</div>      
+      
+          </div>
+          
+          
+        </main>
+    
+    
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__btn">
+              <a class="nav__link" href="friends.html"
+                ><i class="far fa-user fa-2x"></i
+              ></a>
+            </li>
+            <li class="nav__btn chats__btn">
+              <a class="nav__link" href="chats.html">
+                <i class="fas fa-comment fa-2x">
+                  <span class="nav__notification badge">1</span>
+                </i>
+              </li></a>
+            <li class="nav__btn">
+              <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i>
+              </li></a>
+            <li class="nav__btn">
+              <a class="nav__link" href="more.html">
+                <i class="fas fa-ellipsis-h fa-2x">
+                  <div class="nav__dot dot"></div>
+                </i>
+              </li></a
+              >
+          </ul>
+        </nav>
+    
       </div>
     </div>
- 
-    <header class="screen-header">
-      <h1 class="screen-header__title">Chats</h1>
-      <div class="screen-header__icons">
-        <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="far fa-comment-dots fa-lg"></i></span>
-        <span><i class="fas fa-music fa-lg"></i></span>
-        <span><a href="settings.html"><i class="find-screen-header-cog fas fa-cog fa-lg">
-          <div class="find-screen-header-dot dot"></div>
-      </i></a></span>
-      </div>
-    </header>
- 
-    <main class="main-screen">
-      <a href="chat.html">
-        <div class="user-component">
-          <div class="user-component__column">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq4IgGQ-ytBslXNf6ymCd-qFN886_ZAtf0dg&usqp=CAU" class="user-component__avatar user-component__avatar"/>
-            <div class="user-component__text">
-              <h4 class="user-component__title">배수지</h4>
-              <h6 class="user-component__subtitle">카카오 계정 확인 해주세요!</h6>
-            </div>
-          </div>
-          <div class="user-component__column">
-            <span class="user-component__time">21:22</span>
-            <div class="badge">1</div>
-          </div>      
-        </div>
-      </a>
-    
-      
-  
-    </main>
-
-
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__btn">
-          <a class="nav__link" href="friends.html"
-            ><i class="far fa-user fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="chats.html">
-            <i class="fas fa-comment fa-2x">
-              <span class="nav__notification badge">1</span>
-            </i>
-          </li></a>
-        <li class="nav__btn">
-          <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i>
-          </li></a>
-        <li class="nav__btn">
-          <a class="nav__link" href="more.html">
-            <i class="fas fa-ellipsis-h fa-2x">
-              <div class="nav__dot dot"></div>
-            </i>
-          </li></a
-          >
-      </ul>
-    </nav>
-
+   
     <script
       src="https://kit.fontawesome.com/b7de2daa35.js"
       crossorigin="anonymous"

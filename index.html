@@ -8,35 +8,43 @@
   </head>
 
   <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span>No Service</span>
-        <i class="fas fa-wifi"></i>
-      </div>
-      <div class="status-bar__column">
-        <span>18:43</span>
-      </div>
-      <div class="status-bar__column">
-        <span>100%</span>
-        <i class="fas fa-battery-full fa-lg"></i>
-        <i class="fas fa-bolt"></i>
+    <div class="smartphone">
+      <div class="dsp">
+        <div class="status-bar">
+          <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+          </div>
+          <div class="status-bar__column">
+            <span>18:43</span>
+          </div>
+          <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+          </div>
+        </div>
+
+        <header class="welcome-header">
+          <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+          <p class="welcome-header__text">
+            If you have a Kokoa Account, log in with your email or phone number.
+          </p>
+        </header>
+
+        <form action="friends.html" method="GET" id="login-form">
+          <input
+            name="username"
+            type="text"
+            placeholder="Email or phone number"
+          />
+          <input name="password" type="password" placeholder="Password" />
+          <input type="submit" value="Log In" />
+          <input type="submit" value="Sign Up" />
+          <a href="#">Find Kokoa Account or Password</a>
+        </form>
       </div>
     </div>
-
-    <header class="welcome-header">
-      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
-      <p class="welcome-header__text">
-        If you have a Kokoa Account, log in with your email or phone number.
-      </p>
-    </header>
-
-    <form action="friends.html" method="GET" id="login-form">
-      <input name="username" type="text" placeholder="Email or phone number" />
-      <input name="password" type="password" placeholder="Password" />
-      <input type="submit" value="Log In" />
-      <input type="submit" value="Sign Up" />
-      <a href="#">Find Kokoa Account or Password</a>
-    </form>
 
     <script
       src="https://kit.fontawesome.com/b7de2daa35.js"

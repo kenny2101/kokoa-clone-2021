@@ -1,11 +1,13 @@
 .nav {
-  position: fixed;
   bottom: 0;
   width: 100%;
   background-color: #f9f9fa;
   padding: 20px 50px;
   box-sizing: border-box;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  position: absolute;
 }
 .nav__list {
   display: flex;
@@ -16,9 +18,36 @@
   position: relative;
 }
 
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
 .nav__notification {
   position: absolute;
+  animation: notificationAnimation 2s ease-in-out infinite;
 }
 .nav__dot {
   position: absolute;
+}
+
+@keyframes appearBtnAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.nav__btn {
+  animation: appearBtnAnimation 1s ease-in-out forwards;
 }

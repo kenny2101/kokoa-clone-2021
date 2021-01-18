@@ -95,3 +95,35 @@
 .open-post__heart-count span {
   margin-left: 3px;
 }
+
+@keyframes heartBeast {
+  0% {
+    color: white;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeast 1s linear infinite;
+}
+@keyframes navBtnMove {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: none;
+  }
+}
+.find__btn i {
+  animation: navBtnMove 2s ease-in-out infinite;
+}

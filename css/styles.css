@@ -18,14 +18,39 @@
 @import "screens/find.css";
 @import "screens/more.css";
 @import "screens/settings.css";
+@import "screens/chats.css";
 @import "screens/chat.css";
 
 body {
   font-family: "Open Sans", sans-serif;
   color: #2f363e;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #eae9ef;
 }
 .main-screen {
   padding: 0px var(--horizontal-space);
+}
+.smartphone {
+  width: 510px;
+  height: 1010px;
+  margin-top: 100px;
+  border: var(--main-border);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2f363e;
+  box-shadow: 0px 10px 20px 4px rgba(0, 0, 0.3, 0.2);
+}
+.dsp {
+  width: 480px;
+  height: 980px;
+  border: var(--main-border);
+  background-color: white;
+  border-radius: 40px;
+  position: relative;
 }
 
 /*width : 480px;
